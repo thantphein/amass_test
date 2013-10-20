@@ -1,10 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
-
+require 'bootstrap-sass'
 require 'rails/all'
-require 'bootstrap'
-require 'jquery'
-require 'jquery_ujs'
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line

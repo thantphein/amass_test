@@ -1,5 +1,8 @@
 require File.expand_path('../boot', __FILE__)
 
+require 'bootstrap'
+require 'jquery'
+require 'jquery_ujs'
 require 'rails/all'
 
 if defined?(Bundler)
