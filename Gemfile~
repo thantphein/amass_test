@@ -21,20 +21,22 @@ group :test do
 end
 group :production do
   gem 'pg'
-  gem 'rails_log_stdout'
-  gem 'rails3_serve_static_assets'
+  gem 'rails_log_stdout',	github: 'heroku/rails_log_stdout'
+  gem 'rails3_serve_static_assets',	github: 'heroku/rails3_serve_static_assets'
 end
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'therubyracer', '~> 0.12.0'
-  gem 'sass-rails', '~> 3.2.6'
+
   gem 'coffee-rails', '~> 3.2.2'
   gem 'uglifier'
-  gem 'bootstrap-sass'
+  
 end
 
+gem 'therubyracer', '~> 0.12.0'
+gem 'sass-rails', '~> 3.2.6'
+gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'haml'
 
